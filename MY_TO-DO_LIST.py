@@ -3,6 +3,10 @@ from tkinter import *
 import time
 from tkinter import messagebox
 
+# Creating the tasks.txt file
+with open("tasks.txt", "w") as tasks_file_create:
+    tasks_file_create.write("")
+
 # Adding and Deleting items functions
 def add_item(entry: Entry, listbox: Listbox):
     new_task = entry.get()
