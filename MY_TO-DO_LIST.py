@@ -18,9 +18,6 @@ def add_item(entry: Entry, listbox: Listbox):
                 tasks_list_file.write(f'{new_task}')
                 tasks_list_file.write(f'\n')
 
-    if new_task == "Type your task here":
-        messagebox.showwarning("warning", "Please, enter a task.")
-
     else:
         messagebox.showwarning("warning", "Please, enter a task.")
 
